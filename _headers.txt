@@ -1,0 +1,6 @@
+https://slottica.pl/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: document-domain=()
+  Content-Security-Policy "base-uri 'self';" frame-ancestors 'none';

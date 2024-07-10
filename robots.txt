@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /go.html
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: SemrushBot-BA
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+Sitemap: https://slottica.pl/sitemap.xml

@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <meta
+      name="description"
+      content="Slottica Casino ▶️ Odkryj swoje ulubione kasyno w Polsce. Dowiedz się więcej o ofercie, w tym o darmowych spinach dostępnych dla graczy z PL."
+    />
+    <title>Slottica Casino PL ❤️ Kasyna oficjalna strona logowanie</title>
+  </head>
+  <body>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif;
+        color: #060e2a;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        background-color: #f5f5f5;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 2.4375em;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.9375em;
+        margin: 16px 0;
+      }
+      .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+      .btn__accent {
+        text-align: center;
+        padding: 12px 30px;
+        border-radius: 100px;
+        color: #fff;
+        display: inline-block;
+        background: linear-gradient(-45deg, #1245ff 0%, #1245ff 25%, #6586ff 50%, #1245ff 75%, #1245ff 100%) right bottom;
+      }
+      .fixed__menu {
+        display: none;
+      }
+      .mobile__btn {
+        display: none;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 10;
+      }
+      .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        padding: 10px 0;
+      }
+      .menu__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+      .menu__item {
+        padding: 0 8px;
+      }
+      .menu__link {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .menu__link:hover {
+        text-decoration: underline;
+      }
+      .log-in {
+        text-align: center;
+        padding: 12px 30px;
+        border-radius: 100px;
+        color: #fff;
+        display: inline-block;
+        margin-right: 8px;
+        background: linear-gradient(-45deg, #2ec417 0%, #2ec417 50%, #77d968 100%) right bottom;
+      }
+      .menu-burger__input {
+        display: none;
+      }
+      .main {
+        padding-top: 70px;
+      }
+      .baner {
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+        background-image: url('images/banerjpeg.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding: 120px 0px;
+      }
+      .baner__title {
+        text-align: left;
+        color: #0037ff;
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 0;
+      }
+      .baner__subtitle {
+        max-width: 350px;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      .games {
+        min-height: 245px;
+        overflow-x: auto;
+        padding-bottom: 15px;
+      }
+      .margin--top {
+        margin-top: 16px;
+      }
+      .games__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .games__wrapp {
+        width: auto;
+        display: flex;
+        align-items: center;
+      }
+      .games__title {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .games__title:hover {
+        text-decoration: underline;
+      }
+      .more__games {
+        color: #2a58ff;
+        border: 1px solid #2a58ff;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 100px;
+        padding: 6px 11px;
+      }
+      .more__games:hover {
+        background-color: #2a58ff;
+        color: #fff;
+      }
+      .games__item {
+        display: block;
+        width: 260px;
+        height: 215px;
+        position: relative;
+        padding-top: 8px;
+      }
+      .games__item:not(:last-child) {
+        margin-right: 16px;
+      }
+      .games__item--top,
+      .games__item--reealoffortune {
+        position: relative;
+      }
+      .games__item--top::after {
+        content: '';
+        position: absolute;
+        top: -4px;
+        right: 5px;
+        width: 43px;
+        height: 29px;
+        background-image: url('images/top.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .games__item--reealoffortune::after {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: 5px;
+        width: 43px;
+        height: 29px;
+        background-image: url('images/reeloffortune.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .game__img {
+        border-radius: 8px;
+        height: 174px;
+        display: block;
+      }
+      .game__img img {
+        border-radius: 8px;
+      }
+      .game__overlay {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 5px;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 100%;
+        height: 174px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        opacity: 0;
+        padding-bottom: 10px;
+      }
+      .games__item:hover > .game__overlay {
+        opacity: 1;
+        z-index: 2;
+      }
+      .games__item:hover .games__item--top::after,
+      .games__item:hover .games__item--reealoffortune::after {
+        opacity: 0;
+      }
+      .game__overlay-link {
+        text-align: center;
+        padding: 12px 30px;
+        border-radius: 100px;
+        color: #fff;
+        display: inline-block;
+        background: linear-gradient(-45deg, #1245ff 0%, #1245ff 25%, #6586ff 50%, #1245ff 75%, #1245ff 100%) right bottom;
+      }
+      .game__overlay-demo {
+        background: none;
+        color: #fff;
+        border: 1px solid #fff;
+        height: 48px;
+      }
+      .game__overlay-demo:hover {
+        color: #000;
+        background-color: #fff;
+      }
+      .game__title {
+        font-size: 14px;
+        margin: 15px 0 0 0;
+      }
+      .promo__scroll {
+        overflow-x: auto;
+        display: -webkit-box;
+        position: relative;
+        width: 100%;
+        background-image: url('images/header-bg.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .promo__box {
+        width: 100%;
+        padding: 32px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+        overflow-x: auto;
+      }
+      .promo__scroll::before,
+      .promo__scroll::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 8px;
+        background-image: url('images/promo-decor-top.svg');
+        background-position: center;
+        background-repeat: repeat;
+      }
+      .promo__scroll::before {
+        top: 0;
+      }
+      .promo__scroll::after {
+        bottom: 0;
+        transform: rotate(180deg);
+      }
+      .promo__item {
+        max-width: 260px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+      }
+      .promo__inner {
+        padding: 16px 12px;
+        background: linear-gradient(135deg, #6c8dff 0%, #1044ff 100%);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 115px;
+      }
+      .promo__text-box {
+        width: 210px;
+      }
+      .promo__text-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .promo__text-subtitle {
+        margin: 0;
+        font-size: 14px;
+      }
+      .promo__link {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+      .promo__link::after,
+      .promo__link::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 1.5px;
+        background-color: #000;
+      }
+      .promo__link::after {
+        right: 14px;
+        transform: rotate(-45deg);
+      }
+      .promo__link::before {
+        left: 13px;
+        transform: rotate(45deg);
+      }
+      .tournament__scroll {
+        overflow-x: auto;
+      }
+      .games::-webkit-scrollbar,
+      .tournament__scroll::-webkit-scrollbar {
+        height: 5px;
+      }
+      .games::-webkit-scrollbar-thumb,
+      .tournament__scroll::-webkit-scrollbar-thumb {
+        background: #1245ff63;
+      }
+      .games::-webkit-scrollbar-track,
+      .tournament__scroll::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .tournament__wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 100%;
+        width: 100%;
+      }
+      .tournament__item {
+        max-width: 505px;
+        min-width: 495px;
+        min-height: 360px;
+        padding: 0.5rem 1.25rem;
+        color: #ffffff;
+        background: linear-gradient(150deg, #6c8dff 0%, #1044ff 100%);
+        border-radius: 0.5rem;
+        position: relative;
+      }
+      .tournament__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px dashed #fff;
+      }
+      .tournament__title {
+        font-size: 18px;
+      }
+      .tournament__info {
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        color: #0075ff;
+      }
+      .tournament__win {
+        font-size: 3.5rem;
+        line-height: 4.125rem;
+        font-weight: 700;
+        text-align: center;
+        white-space: nowrap;
+        color: #ffe500;
+        margin: 5px 0;
+      }
+      .tournament__side-text {
+        font-size: 14px;
+      }
+      .tournament__side-info {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0;
+      }
+      .tournament__side-info span {
+        color: #ffe500;
+      }
+      .tournament__place + .tournament__place {
+        margin-left: -5px;
+      }
+      .tournament__reward {
+        font-weight: 700;
+        color: #ffe500;
+        font-size: 32px;
+        margin: 0;
+      }
+      .tournament__side-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50deg);
+        right: 8px;
+      }
+      .link-plus {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 12px solid rgba(255, 255, 255, 0.3);
+        position: relative;
+      }
+      .link-plus::after,
+      .link-plus::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25px;
+        height: 5px;
+        border-radius: 5px;
+        transform: translate(-50%);
+        background-color: #fff;
+      }
+      .link-plus::after {
+        transform: translateX(-50%) rotate(90deg);
+      }
+      .tournament__btn {
+        padding-top: 5px;
+        border-top: 1px dashed #fff;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .questions__item {
+        position: relative;
+        border-radius: 20px;
+        border: 1px solid #0057ff;
+        overflow: hidden;
+        margin-bottom: 16px;
+      }
+      .questions__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      .questions__label {
+        display: block;
+        padding: 15px 30px 15px 20px;
+        position: relative;
+        cursor: pointer;
+        background: linear-gradient(84.75deg, #0d2edb 4.05%, #0075ff 101.05%);
+        color: #fff;
+      }
+      .questions__label::after,
+      .questions__label::before {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 10px;
+        width: 1.5px;
+        transition: all 0.5s;
+      }
+      .questions__label::after {
+        right: 23px;
+        transform: rotate(45deg);
+      }
+      .questions__label::before {
+        right: 30px;
+        transform: rotate(-45deg);
+      }
+      .questions__content {
+        padding: 20px;
+        background: #ececec;
+        display: block;
+      }
+      .questions__input:checked ~ .questions__label::after {
+        transform: rotate(135deg);
+      }
+      .questions__input:checked ~ .questions__label::before {
+        transform: rotate(-135deg);
+      }
+      .questions__input:checked ~ .questions__content {
+        display: none;
+      }
+      .footer {
+        color: #fff;
+        background-color: #1b1c29;
+      }
+      .footer__top {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px 0;
+      }
+      .footer__summary {
+        width: 184px;
+      }
+      .footer__menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+      }
+      .footer__menu-item {
+        width: 300px;
+      }
+      .footer__menu-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+      }
+      .footer__menu-link {
+        display: inline-block;
+        width: 48%;
+        color: #c5c9cd;
+      }
+      .footer__menu-link:hover {
+        text-decoration: underline;
+      }
+      .footer__button-link {
+        background: #32333e;
+        border-radius: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.875rem;
+        padding: 12px 16px;
+      }
+      .footer__title {
+        text-align: center;
+      }
+      .footer--scroll {
+        overflow-x: auto;
+        scrollbar-color: gray white;
+        scrollbar-width: thin;
+      }
+      .footer__payments {
+        display: flex;
+        min-width: 1240px;
+      }
+      .footer__payments-link {
+        background: #ffffff;
+        border-radius: 0.5rem;
+        height: 60px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+      }
+      .sprite {
+        display: inline-block;
+        background-image: url('images/footer-sprite.svg');
+        background-repeat: no-repeat;
+      }
+      .sprite-qiwi {
+        width: 92px;
+        height: 42px;
+        background-position: -1px -1px;
+      }
+      .sprite-card {
+        width: 123px;
+        height: 28px;
+        background-position: -251px -53px;
+      }
+      .sprite-jeton_wallet {
+        width: 98px;
+        height: 26px;
+        background-position: -381px -53px;
+      }
+      .sprite-ecopayz {
+        width: 101px;
+        height: 26px;
+        background-position: -182px -1px;
+      }
+      .sprite-skrill {
+        width: 80px;
+        height: 26px;
+        background-position: -126px -84px;
+      }
+      .sprite-neteller {
+        width: 116px;
+        height: 20px;
+        background-position: -5px -84px;
+      }
+      .sprite-community_bank {
+        width: 77px;
+        height: 31px;
+        background-position: -322px -84px;
+      }
+      .sprite-cep_bank {
+        width: 87px;
+        height: 32px;
+        background-position: -94px -1px;
+      }
+      .sprite-papara {
+        width: 99px;
+        height: 27px;
+        background-position: -476px -257px;
+      }
+      .sprite-easyeft {
+        width: 108px;
+        height: 24px;
+        background-position: -125px -355px;
+      }
+      .sprite-astropay-footer {
+        width: 72px;
+        height: 53px;
+        background-position: -435px -173px;
+      }
+      .footer__wrapp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-bottom: 1px solid #52575c;
+        padding: 10px 0;
+        margin-bottom: 15px;
+        overflow-x: auto;
+      }
+      .footer__provider {
+        display: inline-block;
+        min-width: max-content;
+        min-height: max-content;
+      }
+      .footer__provider img,
+      .footer__provider svg {
+        margin: 6px;
+      }
+      .footer__text {
+        margin-bottom: 16px;
+      }
+      .footer__copyright {
+        padding: 15px;
+        text-align: center;
+        background-color: #000;
+      }
+      @media (max-width: 1355px) {
+        .container {
+          padding: 0 16px;
+        }
+        .header__inner {
+          position: relative;
+          justify-content: start;
+          padding-left: 40px;
+        }
+        .logo {
+          position: relative;
+          z-index: 10;
+        }
+        .menu {
+          position: absolute;
+          top: 0px;
+          left: -32px;
+          width: 100%;
+          background: linear-gradient(135deg, #b2c3ff 0%, #6385ff 28.38%, #1044ff 100%);
+          border-radius: 0 1rem 0 0;
+          height: 100vh;
+          transition: all 0.4s;
+          z-index: 5;
+          transform: translateX(-200%);
+        }
+        .menu__list {
+          flex-direction: column;
+          color: #fff;
+          align-items: start;
+          padding-left: 32px;
+        }
+        .menu__item {
+          margin-bottom: 15px;
+        }
+        .menu-burger__input {
+          position: relative;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          margin: 0;
+        }
+        .menu-burger__label {
+          position: absolute;
+          left: 0px;
+          top: 22px;
+          width: 24px;
+          height: 24px;
+          z-index: 11;
+          display: flex;
+          align-items: center;
+        }
+        .menu-burger__label::after,
+        .menu-burger__label::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background-color: #000;
+          transition: all 0.4s;
+        }
+        .menu-burger__label::after {
+          bottom: 3px;
+        }
+        .menu-burger__label::before {
+          top: 3px;
+        }
+        .menu-burger__label span {
+          display: inline-block;
+          width: 100%;
+          height: 1px;
+          background-color: #000;
+          transition: all 0.4s;
+        }
+        .menu-burger__input:checked + .menu-burger__label + .menu {
+          transform: translateX(0);
+        }
+        .menu-burger__input:checked + .menu-burger__label span {
+          opacity: 0;
+        }
+        .menu-burger__input:checked ~ .menu-burger__label::before {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+        .menu-burger__input:checked ~ .menu-burger__label::after {
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+        .header__btn {
+          margin-left: auto;
+        }
+        .footer__menu-list {
+          flex-wrap: wrap;
+        }
+      }
+      @media (max-width: 530px) {
+        .header__inner {
+          justify-content: center;
+          padding-left: 0;
+        }
+        .fixed__menu {
+          display: block;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          max-width: 100%;
+          width: 100%;
+          background-color: #fff;
+          z-index: 10;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+        }
+        .fixed__menu-link {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 2.5rem;
+          margin: 0;
+          padding: 0.25rem 1rem;
+          line-height: 1rem;
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: #fff;
+          border-radius: 100px;
+        }
+        .fixed__menu-login {
+          background: linear-gradient(-45deg, #2ec417 0%, #2ec417 50%, #77d968 100%) right bottom;
+        }
+        .fixed__menu-signin {
+          background: linear-gradient(-45deg, #1245ff 0%, #1245ff 25%, #6586ff 50%, #1245ff 75%, #1245ff 100%) right bottom;
+        }
+        .fixed__menu-link--icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: linear-gradient(-45deg, #f3f3f3 0%, #f3f3f3 25%, #e7e7e7 50%, #f3f3f3 75%, #f3f3f3 100%) right bottom;
+        }
+        .header__btn {
+          display: none;
+        }
+        .mobile__btn {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 72px;
+          gap: 15px;
+        }
+        .mobile__btn-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.25rem 1rem;
+          line-height: 1rem;
+          font-size: 0.875rem;
+          font-weight: 500;
+          border-radius: 100px;
+          min-height: 3rem;
+          width: 190px;
+        }
+        .mobile__btn-login {
+          color: #fff;
+          background: linear-gradient(-45deg, #2ec417 0%, #2ec417 25%, #77d968 50%, #2ec417 75%, #2ec417 100%) right bottom;
+        }
+        .mobile__btn-signin {
+          color: #000;
+          background: linear-gradient(-45deg, #f3f3f3 0%, #f3f3f3 25%, #e7e7e7 50%, #f3f3f3 75%, #f3f3f3 100%) right bottom;
+        }
+        .baner {
+          padding: 0;
+          position: relative;
+          height: 235px;
+          margin-bottom: 187px;
+        }
+        .baner__inner {
+          position: absolute;
+          bottom: -187px;
+          left: 0px;
+          padding: 16px;
+          background-color: #fff;
+          color: #000;
+          width: 100%;
+        }
+        .baner__title {
+          margin-bottom: 10px;
+        }
+        .baner__subtitle {
+          margin-top: 0px;
+          font-weight: 400;
+        }
+        .tournament__item {
+          max-width: 400px;
+          min-width: 360px;
+          min-height: 395px;
+          padding: 7px;
+        }
+        .tournament__title {
+          font-size: 16px;
+          line-height: 100%;
+        }
+        h1 {
+          font-size: 2em;
+        }
+        h2 {
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+        }
+        .footer__top {
+          padding-bottom: 0px;
+        }
+        .footer__summary {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          padding-top: 15px;
+        }
+        .footer__summary-tex {
+          display: none;
+        }
+        .footer__menu-title {
+          margin-bottom: 0;
+        }
+        .footer__menu-link {
+          width: 100%;
+          margin: 4px 0;
+        }
+        .footer__button {
+          display: flex;
+          justify-content: center;
+          order: -2;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #a6abb0;
+          width: 100%;
+        }
+        .footer__button-link {
+          width: fit-content;
+        }
+        .footer__copyright {
+          margin-bottom: 60px;
+        }
+      }
+    </style>
+    <div class="fixed__menu">
+      <a class="fixed__menu-link fixed__menu-login" href="go">Zarejestruj się</a>
+      <a class="fixed__menu-link fixed__menu-signin" href="go">Zaloguj się</a>
+      <a class="fixed__menu-link fixed__menu-link--icon" href="go">
+        <img src="images/slot-machine.webp" width="24" height="24" loading="lazy" alt="icon" />
+      </a>
+      <a class="fixed__menu-link fixed__menu-link--icon" href="go">
+        <img src="images/diamond.webp" width="24" height="24" loading="lazy" alt="icon" />
+      </a>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="https://slottica.pl">
+            <img src="images/logo.svg" width="132" height="40" alt="logo" />
+          </a>
+          <input class="menu-burger__input" type="checkbox" id="burger" />
+          <label class="menu-burger__label" for="burger"><span></span></label>
+          <nav class="menu">
+            <div class="mobile__btn">
+              <a class="mobile__btn-link mobile__btn-login" href="go">Zarejestruj się</a>
+              <a class="mobile__btn-link mobile__btn-signin" href="go">Zaloguj się</a>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="go">Gry</a></li>
+              <li class="menu__item"><a class="menu__link" href="go">Dealerzy Na Żywo</a></li>
+              <li class="menu__item"><a class="menu__link" href="go">Sport</a></li>
+              <li class="menu__item"><a class="menu__link" href="go">Cybersport</a></li>
+              <li class="menu__item"><a class="menu__link" href="go">Wirtualny sport</a></li>
+              <li class="menu__item">
+                <a class="menu__link" href="go">
+                  <img src="images/diamond.svg" width="34" height="28" loading="lazy" alt="icon" />
+                  <span> Promocje </span>
+                </a>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="go">Aplikacja mobilna</a></li>
+            </ul>
+          </nav>
+          <div class="header__btn">
+            <a class="header__btn-link log-in" href="go">Zarejestruj się</a>
+            <a class="header__btn-link btn__accent" href="go">Zaloguj się</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="baner">
+        <div class="container">
+          <div class="baner__inner">
+            <h2 class="baner__title">300% + 30 FS!</h2>
+            <h3 class="baner__subtitle">Wydajemy bonusy powitalne do pierwszych trzech depozytów!</h3>
+            <a class="baner__btn btn__accent" href="go">Zdobądź</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="games-box">
+          <div class="games__top">
+            <h2 class="games__title">Najlepsze gry</h2>
+            <a class="more__games" href="go">Więcej</a>
+          </div>
+          <div class="games">
+            <div class="games__wrapp">
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/5-fortunator.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">5 Fortunator</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/fruit-million.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Fruit Million</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--reealoffortune">
+                  <img src="images/energy-coins.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Energy Coins: Hold and Win</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/wild-cash.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Wild Cash x9990</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/coin-volcano.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Coin Volcano</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/lady-wolf.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Lady Wolf Moon Megaways</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--reealoffortune">
+                  <img src="images/power-crown.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Power Crown: Hold and Win</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="games-box">
+          <div class="games__top">
+            <h2 class="games__title">Nowe gry</h2>
+            <a class="more__games" href="go">Więcej</a>
+          </div>
+          <div class="games">
+            <div class="games__wrapp">
+              <div class="games__item">
+                <a class="game__img" href="go">
+                  <img src="images/energy-joker.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Energy Joker Hold and Win</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img">
+                  <img src="images/WILD-MIRAGE.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">WILD MIRAGE</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Great-Buffalo-Megaways.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Great Buffalo Megaways</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Candy-Blitz-Bombs.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Candy Blitz Bombs</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Book-Of-Rempage.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Book Of Rampage - A Moonlight Tale</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Pinata-Wins.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Pinata Wins</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Orient-Story-Deluxe.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Orient Story Deluxe</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promo">
+          <h2>Promocje</h2>
+          <div class="promo__scroll">
+            <div class="promo__box">
+              <div class="promo__item">
+                <img
+                  class="promo__img"
+                  src="images/calendar-link.webp"
+                  width="232"
+                  height="190"
+                  loading="lazy"
+                  alt="promo image"
+                />
+                <div class="promo__inner">
+                  <div class="promo__text-box">
+                    <p class="promo__text-title">Season's Battle</p>
+                    <p class="promo__text-subtitle">Wygrywaj fajne gadżety co sezon!</p>
+                  </div>
+                  <a class="promo__link" aria-label="read more promo" href="go"></a>
+                </div>
+              </div>
+              <div class="promo__item">
+                <img
+                  class="promo__img"
+                  src="images/lottery-link.webp"
+                  width="232"
+                  height="190"
+                  loading="lazy"
+                  alt="promo image"
+                />
+                <div class="promo__inner">
+                  <div class="promo__text-box">
+                    <p class="promo__text-title">Loterie</p>
+                    <p class="promo__text-subtitle">Wygraj fajne urządzenia i darmowe spiny!</p>
+                  </div>
+                  <a class="promo__link" aria-label="read more promo" href="go"></a>
+                </div>
+              </div>
+              <div class="promo__item">
+                <img
+                  class="promo__img"
+                  src="images//tournament-link.webp"
+                  width="232"
+                  height="190"
+                  loading="lazy"
+                  alt="promo image"
+                />
+                <div class="promo__inner">
+                  <div class="promo__text-box">
+                    <p class="promo__text-title">Turnieje</p>
+                    <p class="promo__text-subtitle">Wygraj i zabieraj technike i darmowe spiny!</p>
+                  </div>
+                  <a class="promo__link" aria-label="read more promo" href="go"></a>
+                </div>
+              </div>
+              <div class="promo__item">
+                <img class="promo__img" src="images/offers-link.webp" width="232" height="190" loading="lazy" alt="promo image" />
+                <div class="promo__inner">
+                  <div class="promo__text-box">
+                    <p class="promo__text-title">Bonusy</p>
+                    <p class="promo__text-subtitle">Odbierz free spiny lub procent bonus una swoje konto!</p>
+                  </div>
+                  <a class="promo__link" aria-label="read more promo" href="go"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="games-box">
+          <div class="games__top">
+            <h2 class="games__title">Wszystkie gry</h2>
+            <a class="more__games" href="go">Więcej</a>
+          </div>
+          <div class="games">
+            <div class="games__wrapp">
+              <div class="games__item">
+                <a href="go" class="game__img games__item--reealoffortune">
+                  <img src="images/energy-coins.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Energy Coins: Hold and Win</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/wild-cash.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Wild Cash x9990</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Egypt-Fire.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Egypt Fire</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Wolf-Gold.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Wolf Gold</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/5-fortunator.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">5 Fortunator</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="games-box margin--top">
+          <div class="games">
+            <div class="games__wrapp">
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/coin-volcano.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Coin Volcano</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Sun-of-Egypt-3.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Sun of Egypt 3</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--reealoffortune">
+                  <img src="images/power-crown.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Power Crown: Hold and Win</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Mor-Magic-Apple.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">More Magic Apple</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+              <div class="games__item">
+                <a href="go" class="game__img games__item--top">
+                  <img src="images/Aztec-Fire.webp" width="260" height="174" alt="game image" loading="lazy" />
+                </a>
+                <p class="game__title">Aztec Fire 2</p>
+                <div class="game__overlay">
+                  <a class="game__overlay-link" href="go">Graj</a>
+                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tournament">
+          <h2>Turnieje</h2>
+          <div class="tournament__scroll">
+            <div class="tournament__wrapp">
+              <div class="tournament__item">
+                <div class="tournament__top">
+                  <img class="tournament__icon" src="images/tourCalendar.webp" width="32" height="32" loading="lazy" alt="icon" />
+                  <span class="tournament__title">Codzienny Turniej</span>
+                  <span class="tournament__info">i</span>
+                </div>
+                <h3 class="tournament__win">€ 7500</h3>
+                <div class="tournament__box">
+                  <div class="tournament__side-left">
+                    <p class="tournament__side-text">Rywalizuj w turniejach i zdobywaj darmowe spiny!</p>
+                    <p class="tournament__side-info">Twój ranking: -</p>
+                    <p class="tournament__side-info">Twój wynik: -</p>
+                    <p class="tournament__side-info">Nagrody: <span>100</span></p>
+                    <div class="tournament__places">
+                      <a class="tournament__place" href="go">
+                        <img src="images/place1.webp" width="40" height="40" loading="lazy" alt="image place" />
+                      </a>
+                      <a class="tournament__place" href="go">
+                        <img src="images/place2.webp" width="40" height="36" loading="lazy" alt="image place" />
+                      </a>
+                      <a class="tournament__place" href="go">
+                        <img src="images/place3.webp" width="40" height="36" loading="lazy" alt="image place" />
+                      </a>
+                      <p class="tournament__reward">100FS</p>
+                    </div>
+                  </div>
+                  <div class="tournament__side-right">
+                    <a class="link-plus" aria-label="read more tournament" href="go"></a>
+                  </div>
+                </div>
+                <a class="tournament__btn" href="go">Gry turniejowe</a>
+              </div>
+              <div class="tournament__item">
+                <div class="tournament__top">
+                  <img class="tournament__icon" src="images/tourCalendar.webp" width="32" height="32" loading="lazy" alt="icon" />
+                  <span class="tournament__title">COTYGODNIOWY TURNIEJ </span>
+                  <span class="tournament__info">i</span>
+                </div>
+                <h3 class="tournament__win">€ 9000</h3>
+                <div class="tournament__box">
+                  <div class="tournament__side-left">
+                    <p class="tournament__side-text">Zostań właścicielem telewizor Samsung w cotygodniowym turnieju!</p>
+                    <p class="tournament__side-info">Twój ranking: -</p>
+                    <p class="tournament__side-info">Twój wynik: -</p>
+                    <p class="tournament__side-info">Nagrody: <span>300</span></p>
+                    <div class="tournament__places">
+                      <a class="tournament__place" href="go"
+                        ><img src="images/place1.webp" width="40" height="40" loading="lazy" alt="image place" />
+                      </a>
+                      <a class="tournament__place" href="go">
+                        <img src="images/place2.webp" width="40" height="36" loading="lazy" alt="image place" />
+                      </a>
+                      <a class="tournament__place" href="go">
+                        <img src="images/place3.webp" width="40" height="36" loading="lazy" alt="image place" />
+                      </a>
+                      <p class="tournament__reward">8 750 zł</p>
+                    </div>
+                  </div>
+                  <div class="tournament__side-right">
+                    <a class="link-plus" aria-label="read more tournament" href="go"></a>
+                  </div>
+                </div>
+                <a class="tournament__btn" href="go">Gry turniejowe</a>
+              </div>
+              <div class="tournament__item">
+                <div class="tournament__top">
+                  <img class="tournament__icon" src="images/tourCalendar.webp" width="32" height="32" loading="lazy" alt="icon" />
+                  <span class="tournament__title">COLORFUL NOVEMBER WITH ENDORPHINA</span>
+                  <span class="tournament__info">i</span>
+                </div>
+                <h3 class="tournament__win">€ 9000</h3>
+                <div class="tournament__box">
+                  <div class="tournament__side-left">
+                    <p class="tournament__side-text">Podbij szczyt zawodów od Endorphina!</p>
+                    <p class="tournament__side-info">Twój ranking: -</p>
+                    <p class="tournament__side-info">Twój wynik: -</p>
+                    <p class="tournament__side-info">Nagrody: <span>200</span></p>
+                    <div class="tournament__places">
+                      <a class="tournament__place" href="go">
+                        <img src="images/place1.webp" width="40" height="40" loading="lazy" alt="image place" />
+                      </a>
+                      <a class="tournament__place" href="go">
+                        <img src="images/place2.webp" width="40" height="36" loading="lazy" alt="image place" />
+                      </a>
+                      <a class="tournament__place" href="go">
+                        <img src="images/place3.webp" width="40" height="36" loading="lazy" alt="image place" />
+                      </a>
+                      <p class="tournament__reward">₴ 2 250</p>
+                    </div>
+                  </div>
+                  <div class="tournament__side-right">
+                    <a class="link-plus" aria-label="read more tournament" href="go"></a>
+                  </div>
+                </div>
+                <a class="tournament__btn" href="go">Gry turniejowe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h1>Slottica Casino 🇵🇱</h1>
+          <p>
+            Slottica Casino jest doskonałym przykładem tego, jak można osiągnąć sukces dzięki innowacjom i zorientowaniu na
+            klienta. Założone w 2018 roku kasyno Slottica oferuje klientom unikalną mieszankę klasycznych i nowoczesnych automatów
+            do gier, gier stołowych i zakładów sportowych. Z licencją wydaną przez rząd Curaçao, to kasyno obiecuje zabawne i
+            bezpieczne środowisko gry ze wszystkimi uczciwymi przepisami i standardami gier.
+          </p>
+          <p>
+            Co sprawia, że Slottica jest wyjątkowym wyborem dla graczy? Odpowiedź tkwi w szczegółach, od intuicyjnego projektu
+            strony internetowej, który jest dostosowany do wygody użytkownika, po wielopoziomowy system bonusów, który nagradza
+            zarówno nowych, jak i lojalnych klientów. Ponadto Slottica oferuje całodobową obsługę klienta, która jest kluczem do
+            zapewnienia, że wszelkie pytania lub wątpliwości są rozpatrywane szybko i sprawnie.
+          </p>
+          <p>
+            Slottica kasyno przedstawia obiecujący świat hazardu, w którym każdy gracz może znaleźć coś dla siebie, niezależnie od
+            tego, czy jest fanem automatów, który preferuje energiczne i kolorowe automaty wideo, czy też koneserem gier stołowych
+            szukającym realizmu w grach z krupierem na żywo.
+          </p>
+          <h2>Doświadczenie w grach</h2>
+          <p>
+            Slottica Casino oferuje swoim użytkownikom bogate doświadczenie w grach, które zaczyna się od portfolio gier, które
+            obejmuje wszystko, od klasycznych automatów do gier z krupierem na żywo. Wiodący twórcy oprogramowania są
+            odpowiedzialni za jakość i różnorodność gier w Slottica. To partnerstwo zapewnia graczom dostęp do najpopularniejszych
+            i najbardziej innowacyjnych gier na rynku.
+          </p>
+          <p>
+            <b>Różnorodność gier:</b>
+          </p>
+          <ul>
+            <li>
+              <b>Sloty:</b> Slottica obejmuje tysiące slotów, od klasycznych automatów owocowych po nowoczesne sloty wideo z
+              wieloma funkcjami i rundami bonusowymi;
+            </li>
+            <li>
+              <b>Gry stołowe:</b> tradycyjni gracze znajdą ruletkę, blackjacka, bakarata i pokera w różnych odmianach, dzięki
+              czemu mogą wybrać grę odpowiadającą wszystkim gustom;
+            </li>
+            <li>
+              <b>Gry z krupierem na żywo:</b> Slottica zapewnia imponującą kolekcję gier z krupierem na żywo, które są
+              transmitowane na żywo z profesjonalnych studiów, tworząc prawdziwą atmosferę kasyna.
+            </li>
+          </ul>
+          <p>
+            <b>Wiodący twórcy oprogramowania:</b>
+          </p>
+          <ul>
+            <li><b>NetEnt:</b> znany z innowacyjnych slotów i imponującej grafiki;</li>
+            <li><b>Microgaming:</b> oferujący jedne z największych jackpotów i szeroką gamę gier;</li>
+            <li><b>Play'n GO:</b> deweloper słynący z tematycznych slotów i optymalizacji mobilnej.</li>
+          </ul>
+          <p>
+            Slottica regularnie aktualizuje również swoją ofertę gier o nowe wersje od tych i innych deweloperów, dzięki czemu
+            rozgrywka jest stale ekscytująca i interesująca. Takie podejście nie tylko utrzymuje zainteresowanie obecnych
+            użytkowników, ale także przyciąga nowych, dzięki świeżości i trafności oferowanej rozrywki.
+          </p>
+          <p>
+            W ten sposób Slottica tworzy środowisko, w którym każdy gracz, niezależnie od swoich preferencji i doświadczenia
+            hazardowego, znajdzie coś wyjątkowego dla siebie.
+          </p>
+          <h2>Bonusy i promocje</h2>
+          <p>
+            Slottica Casino wie, jak przyciągnąć i utrzymać uwagę graczy, oferując szeroką gamę bonusów i promocji, które
+            sprawiają, że gra jest nie tylko ekscytująca, ale także opłacalna.
+          </p>
+          <p>
+            <b>Rzeczywiste bonusy i promocje obejmują:</b>
+          </p>
+          <ul>
+            <li>
+              <b>Bonus powitalny:</b> nowi gracze otrzymują pakiet powitalny, który często obejmuje kilka rodzajów bonusów, takich
+              jak bonusy od kilku pierwszych depozytów i darmowe spiny na popularnych slotach;
+            </li>
+            <li>
+              <b>Codzienne i cotygodniowe promocje:</b> Slottica regularnie aktualizuje swoje promocje, oferując bonusy od
+              depozytu, cashback i darmowe spiny;
+            </li>
+            <li>
+              <b>Turnieje i konkursy:</b> gracze mogą brać udział w turniejach na automatach i grach stołowych, w których nagrody
+              często obejmują zarówno gotówkę, jak i bonusy;
+            </li>
+            <li>
+              <b>Program VIP:</b> regularni gracze mogą otrzymywać ekskluzywne bonusy, ulepszone warunki zwrotu gotówki i inne
+              przywileje w ramach programu VIP.
+            </li>
+          </ul>
+          <p>
+            Te bonusy i promocje nie tylko zwiększają szanse na wygraną bez dodatkowych inwestycji, ale także znacznie poprawiają
+            ogólne wrażenia z gry w Slottica. Każdy bonus ma swoje własne warunki użytkowania, takie jak wymagania dotyczące
+            zakładów i minimalny depozyt, więc graczom zaleca się dokładne zapoznanie się z tymi warunkami przed aktywacją
+            bonusów.
+          </p>
+          <p>
+            SlotticaCasino stawia na przejrzystość i uczciwość w odniesieniu do swoich ofert bonusowych, co pozwala graczom czuć
+            się pewnie i komfortowo, wiedząc, że otrzymują uczciwe i uczciwe warunki.
+          </p>
+          <h2>Program VIP Slottica</h2>
+          <p>
+            Program VIP w Slottica jest podzielony na kilka poziomów, z których każdy otwiera nowe możliwości i lepsze bonusy dla
+            członków. Przejście między poziomami opiera się na zgromadzonych punktach w grze, które gracze zdobywają obstawiając
+            prawdziwe pieniądze.
+          </p>
+          <p>
+            <b>Wśród korzyści płynących ze statusu VIP są:</b>
+          </p>
+          <ul>
+            <li>
+              <b>Osobisty menedżer:</b> najwyższe poziomy programu zapewniają dostęp do osobistego menedżera, który pomaga
+              rozwiązywać wszelkie problemy i organizuje specjalne oferty;
+            </li>
+            <li>
+              <b>Ekskluzywne bonusy i promocje:</b> gracze VIP otrzymują unikalne bonusy, które nie są dostępne dla innych
+              użytkowników, w tym korzystniejsze procenty cashback, bonusy reload i specjalne prezenty;
+            </li>
+            <li>
+              <b>Przyspieszone wypłaty i wyższe limity:</b> członkowie VIP korzystają z przyspieszonych procedur wypłat oraz
+              wyższych limitów wpłat i wypłat, dzięki czemu transakcje finansowe są wygodniejsze i szybsze;
+            </li>
+            <li>
+              <b>Specjalne wydarzenia i zaproszenia:</b> członkowie VIP często otrzymują zaproszenia na ekskluzywne wydarzenia,
+              takie jak turnieje, specjalne spotkania i inne wydarzenia organizowane przez kasyno.
+            </li>
+          </ul>
+          <p>
+            Skuteczność programu VIP Slottica polega nie tylko na wymiernych korzyściach, ale także na tworzeniu poczucia wartości
+            i uznania dla graczy, którzy wykazują się lojalnością i aktywnością. Kasyno Slottica dokłada wszelkich starań, aby
+            każdy członek programu VIP czuł się wyjątkowy i ważny, podkreślając jego status nie tylko poprzez bonusy, ale także
+            poprzez osobistą uwagę i szacunek dla jego preferencji i potrzeb.
+          </p>
+          <h2>Slottica Casino mobilne</h2>
+          <p>
+            Kasyno mobilne Slottica daje graczom możliwość cieszenia się ulubionymi grami bez względu na to, gdzie się znajdują,
+            dzięki zoptymalizowanej mobilnej wersji strony i dostępności aplikacji. Przesuwa to granice tradycyjnego hazardu,
+            oferując wysokiej jakości wrażenia użytkownika na smartfonach i tabletach.
+          </p>
+          <p>
+            Kompatybilność z różnymi urządzeniami jest kluczowym aspektem mobilnego kasyna Slottica. Zostało ono zaprojektowane
+            tak, aby zapewnić płynne działanie zarówno na urządzeniach z systemem iOS, jak i Android. Gracze mogą łatwo uzyskać
+            dostęp do swoich ulubionych automatów, gier stołowych, a nawet gier z krupierem na żywo bezpośrednio przez
+            przeglądarkę telefonu komórkowego lub za pośrednictwem specjalnie zaprojektowanej aplikacji, która jest dostępna do
+            pobrania na oficjalnej stronie kasyna.
+          </p>
+          <p>
+            Aplikacja Slottica jest wygodna, ponieważ oferuje użytkownikowi szybki dostęp do gier, powiadomienia o nowych
+            promocjach i bonusach oraz zwiększone bezpieczeństwo dzięki wbudowanej technologii mobilnej. Z drugiej strony, strona
+            mobilna nie wymaga pobierania, co oszczędza miejsce na urządzeniu i zapewnia ten sam szeroki wybór gier.
+          </p>
+          <p>
+            Ponadto ekskluzywne bonusy dla użytkowników mobilnych stają się miłym dodatkiem do wrażeń z gry. Slottica często
+            oferuje specjalne promocje, które są dostępne tylko podczas korzystania z wersji mobilnej, zachęcając graczy do
+            częstszego korzystania z aplikacji mobilnej lub strony bukmacherskiej.
+          </p>
+          <h2>Metody płatności</h2>
+          <p>
+            SlotticaCasino oferuje swoim graczom szeroką gamę metod płatności, dzięki czemu proces wpłat i wypłat jest tak wygodny
+            i bezpieczny, jak to tylko możliwe. Dbałość o szczegóły i koncentracja na potrzebach graczy jest widoczna w każdym
+            aspekcie transakcji finansowych w kasynie.
+          </p>
+          <ul>
+            <li>
+              <b>Lista dostępnych metod obejmuje:</b>
+            </li>
+            <li><b>Karty bankowe:</b> Visa i MasterCard;</li>
+            <li><b>E-portfele:</b> Skrill, Neteller i EcoPayz;</li>
+            <li>
+              <b>Systemy płatności natychmiastowych:</b> metody takie jak Trustly umożliwiają graczom dokonywanie płatności
+              bezpośrednio z ich kont bankowych bez konieczności korzystania z kart bankowych;
+            </li>
+            <li><b>Kryptowaluty:</b> Bitcoin, USDT i inne kryptowaluty powoli wchodzą do użytku jako metoda wpłat i wypłat.</li>
+          </ul>
+          <p>
+            <b>Funkcje transakcji:</b>
+          </p>
+          <ul>
+            <li>
+              <b>Czas przetwarzania:</b> Slottica stara się zapewnić szybkie przetwarzanie transakcji, ale czas oczekiwania może
+              się różnić w zależności od wybranej metody;
+            </li>
+            <li>
+              <b>Limity:</b> Kasyno ustala pewne limity minimalnych i maksymalnych kwot wpłat i wypłat, które mogą się różnić w
+              zależności od metody płatności i statusu gracza;
+            </li>
+            <li>
+              <b>Obsługa walut:</b> Slottica obsługuje różne waluty, dzięki czemu gracze z różnych krajów mogą czuć się komfortowo
+              dokonując transakcji bez konieczności konwersji.
+            </li>
+          </ul>
+          <p>
+            Slottica kasyno przywiązuje dużą wagę nie tylko do wygody, ale także do bezpieczeństwa wszystkich transakcji
+            płatniczych. Kasyno wykorzystuje zaawansowane technologie szyfrowania i przestrzega surowych międzynarodowych
+            standardów bezpieczeństwa, co zapewnia ochronę informacji finansowych i danych osobowych graczy.
+          </p>
+          <h2>Obsługa klienta</h2>
+          <p>
+            Jednym z kluczowych aspektów każdego udanego kasyna online jest wysokiej jakości zespół obsługi klienta. Slottica
+            Casino ciężko pracuje, aby zapewnić swoim graczom dostęp do wydajnego i przyjaznego wsparcia. Wielokanałowy system
+            komunikacji Slottica ułatwia uzyskanie pomocy na wielu platformach, dzięki czemu proces komunikacji z kasynem jest
+            wygodny i wydajny.
+          </p>
+          <p><b>Kanały komunikacji obejmują:</b></p>
+          <ul>
+            <li><b>Czat online:</b> jest to najszybszy sposób kontaktu z obsługą klienta;</li>
+            <li>
+              <b>E-mail:</b> w przypadku bardziej formalnych zapytań lub konieczności wysłania dokumentów, gracze mogą skorzystać
+              z poczty elektronicznej;
+            </li>
+            <li><b>Wsparcie telefoniczne:</b> dla tych, którzy wolą rozmawiać głosowo, dostępna jest linia telefoniczna.</li>
+          </ul>
+          <p>
+            Slottica jest również wyposażona w sekcję często zadawanych pytań (FAQ), która oferuje odpowiedzi na wiele typowych
+            pytań związanych z kontem, transakcjami finansowymi, bonusami i innymi aspektami gry w kasynie. Sekcja ta jest stale
+            aktualizowana i rozszerzana, umożliwiając graczom szybkie znalezienie potrzebnych informacji bez konieczności
+            kontaktowania się z obsługą klienta.
+          </p>
+          <p>
+            Jakość obsługi klienta w Slottica jest często podkreślana w recenzjach użytkowników jako jedna z mocnych stron kasyna.
+            Zespół wsparcia charakteryzuje się wysokim poziomem profesjonalizmu i chęcią wyjścia naprzeciw potrzebom klientów, co
+            tworzy pozytywne wrażenie i pomaga budować zaufanie i lojalność graczy.
+          </p>
+          <h2>Bezpieczeństwo i uczciwa gra</h2>
+          <p>
+            Bezpieczeństwo i uczciwa gra to fundament, na którym budowane jest zaufanie między kasynem online a jego klientami.
+            SlotticaCasino dokłada wszelkich starań, aby zapewnić wysoki poziom bezpieczeństwa i uczciwości dla wszystkich swoich
+            graczy.
+          </p>
+          <p>
+            <b
+              >Wdrażanie zaawansowanych technologii szyfrowania i przestrzeganie surowych międzynarodowych standardów to kluczowe
+              aspekty ich strategii bezpieczeństwa:</b
+            >
+          </p>
+          <ul>
+            <li>
+              <b>Technologie szyfrowania:</b> Slottica wykorzystuje najnowocześniejsze technologie szyfrowania SSL w celu ochrony
+              wszystkich transakcji online i danych osobowych użytkowników;
+            </li>
+            <li>
+              <b>Integralność gry:</b> Aby zapewnić integralność procesu gry, Slottica korzysta z generatora liczb losowych (RNG),
+              który jest regularnie kontrolowany i certyfikowany przez niezależne firmy audytorskie;
+            </li>
+            <li>
+              <b>Polityka prywatności:</b> Slottica ściśle przestrzega zasad prywatności danych, o czym świadczy szczegółowa
+              polityka prywatności;
+            </li>
+            <li>
+              <b>Licencje i regulacje:</b> Slottica działa na podstawie licencji wydanej przez Curaçao, która nie tylko podkreśla
+              ich legalność, ale także zobowiązuje kasyno do przestrzegania określonych zasad i standardów hazardu.
+            </li>
+          </ul>
+          <p>
+            Te środki bezpieczeństwa i uczciwej gry w kasynie Slottica pomagają stworzyć bezpieczne i uczciwe środowisko gry, w
+            którym gracze mogą czuć się pewnie i chronieni, ciesząc się hazardem bez obawy o oszustwo lub manipulację.
+          </p>
+          <h2>Odpowiedzialna gra</h2>
+          <p>
+            Slottica Casino poważnie traktuje odpowiedzialną grę, zapewniając swoim klientom szereg narzędzi i zasobów, które
+            pomogą im zachować kontrolę nad ich nawykami hazardowymi. Kasyno aktywnie współpracuje z różnymi organizacjami
+            specjalizującymi się w pomocy osobom uzależnionym od hazardu i regularnie szkoli swój personel, aby odpowiednio
+            reagował na potencjalne przypadki problemów z hazardem.
+          </p>
+          <p>
+            <b>Kluczowe aspekty polityki odpowiedzialnego hazardu Slottica:</b>
+          </p>
+          <ul>
+            <li>
+              <b>Osobiste limity:</b> gracze mogą ustalać własne limity wpłat, zakładów i przegranych, aby kontrolować swoje
+              wydatki i unikać impulsywnych zakładów, które mogą prowadzić do problemów finansowych;
+            </li>
+            <li>
+              <b>Samowykluczenie:</b> gracze mogą zażądać tymczasowego lub stałego samowykluczenia z kasyna, jeśli zajdzie taka
+              potrzeba. Daje to możliwość zrobienia sobie przerwy od gry na określony czas lub całkowitego zaprzestania
+              działalności hazardowej;
+            </li>
+            <li>
+              <b>Wskazówki dotyczące odpowiedzialnego hazardu:</b> strona internetowa kasyna zawiera informacje o tym, jak
+              rozpoznać oznaki uzależnienia i gdzie szukać pomocy. Slottica udostępnia również linki do profesjonalnych usług
+              wsparcia;
+            </li>
+            <li>
+              <b>Ochrona nieletnich:</b> Slottica ściśle egzekwuje politykę zakazu gry dla osób poniżej 18 roku życia i
+              wykorzystuje zaawansowane systemy weryfikacji, aby uniemożliwić nieletnim dostęp do treści związanych z grami.
+            </li>
+          </ul>
+          <p>
+            Ponadto Slottica aktywnie uczestniczy w programach podnoszących świadomość zagrożeń związanych z hazardem, finansując
+            badania i kampanie mające na celu zwalczanie uzależnienia od hazardu. Podejście kasyna do odpowiedzialnej gry
+            podkreśla ich zaangażowanie w tworzenie bezpiecznego i zdrowego środowiska hazardowego, w którym uzależnienie od
+            hazardu pozostaje zabawą, a nie staje się problemem.
+          </p>
+          <h2>Podsumowanie</h2>
+          <p>
+            Podsumowując, można śmiało powiedzieć, że SlotticaCasino oferuje wysokiej jakości wrażenia z gry poparte niezawodnym
+            bezpieczeństwem i uczciwą grą. Połączenie szerokiej gamy gier, hojnych bonusów i atrakcyjnego programu VIP sprawia, że
+            kasyno jest atrakcyjnym wyborem zarówno dla nowicjuszy, jak i doświadczonych graczy.
+          </p>
+          <p><b>Zalety kasyna Slottica:</b></p>
+          <ul>
+            <li>
+              <b>Różnorodność gier:</b> ponad tysiąc gier od najlepszych deweloperów gwarantuje, że każdy znajdzie coś dla siebie;
+            </li>
+            <li>
+              <b>Kompatybilność z urządzeniami mobilnymi:</b> doskonale zoptymalizowane kasyno mobilne pozwala graczom cieszyć się
+              grami w podróży;
+            </li>
+            <li><b>Obsługa klienta:</b> wielokanałowa i całodobowa obsługa klienta zapewnia, że pomoc jest zawsze pod ręką;</li>
+            <li>
+              <b>Bezpieczeństwo i ochrona:</b> rygorystyczne środki bezpieczeństwa i polityka prywatności chronią dane graczy.
+            </li>
+          </ul>
+          <p>
+            <b>Wady obejmują:</b>
+          </p>
+          <ul>
+            <li>
+              <b>Ograniczenia dotyczące wypłat:</b> niektórzy gracze mogą napotkać ograniczenia dotyczące wypłacania wygranych,
+              zwłaszcza jeśli nie zapoznali się z warunkami bonusu;
+            </li>
+            <li>
+              <b>Dostępność w niektórych krajach:</b> ze względu na ograniczenia licencyjne i regulacyjne Slottica nie jest
+              dostępna w niektórych krajach, co ogranicza jej globalną dostępność.
+            </li>
+          </ul>
+          <p>
+            Slottica kasyno jest godnym wyborem dla tych, którzy szukają niezawodnego i zróżnicowanego kasyna online.
+            Odpowiedzialne podejście do hazardu i przywiązanie do wysokich standardów sprawiają, że jest to atrakcyjne miejsce dla
+            graczy poszukujących wysokiej jakości i bezpiecznych wrażeń z gry.
+          </p>
+          <div class="content__inner" id="Często-zadawane-pytania">
+            <h2>Często zadawane pytania</h2>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-1" />
+              <label class="questions__label" for="question-1"
+                >Jakie dokumenty muszę dostarczyć, aby zweryfikować moje konto w kasynie Slottica?</label
+              >
+              <div class="questions__content">
+                Aby zweryfikować swoje konto w Slottica Casino, musisz dostarczyć kopie dokumentów potwierdzających Twoją
+                tożsamość i adres. Może to być paszport, prawo jazdy lub rachunek za media nie starszy niż trzy miesiące. Środki
+                te są podejmowane w celu zapewnienia bezpieczeństwa konta i zgodności z wymogami regulacyjnymi.
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-2" />
+              <label class="questions__label" for="question-2"
+                >Czy mogę grać w Slottica kasyno z mojego urządzenia mobilnego?</label
+              >
+              <div class="questions__content">
+                Tak, Slottica Casino jest w pełni przystosowane do urządzeń mobilnych. Możesz grać w swoje ulubione gry
+                bezpośrednio przez przeglądarkę na smartfonie lub tablecie lub pobrać aplikację mobilną dostępną na urządzenia z
+                systemem iOS i Android.
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-3" />
+              <label class="questions__label" for="question-3">Jakie metody wpłat są dostępne w Slottica Casino?</label>
+              <div class="questions__content">
+                Slottica kasyno oferuje różne metody wpłat, w tym karty bankowe (Visa i MasterCard), e-portfele (takie jak Skrill
+                i Neteller) oraz opcję korzystania z kryptowalut, takich jak Bitcoin. Wybór metody zależy od regionu i preferencji
+                użytkownika.
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-4" />
+              <label class="questions__label" for="question-4">Jak długo trwa wypłata środków z kasyna Slottica?</label>
+              <div class="questions__content">
+                Czas przetwarzania wypłat w Slottica Casino może się różnić w zależności od wybranej metody wypłaty. E-portfele są
+                zazwyczaj przetwarzane w ciągu 24 godzin, podczas gdy przelewy bankowe mogą potrwać do 3-5 dni roboczych.
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-5" />
+              <label class="questions__label" for="question-5">W jaki sposób Slottica Casino gwarantuje uczciwą grę?</label>
+              <div class="questions__content">
+                Wszystkie gry w Slottica Casino są zasilane przez certyfikowany generator liczb losowych (RNG), który jest
+                regularnie kontrolowany przez niezależne organizacje audytorskie. Gwarantuje to, że wszystkie gry działają
+                uczciwie i dają każdemu graczowi równe szanse na wygraną.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__summary">
+              <img class="footer__logo" src="images/footer-logo.svg" width="132" height="40" alt="logo" loading="lazy" />
+              <p class="footer__summary-tex">slottica website logo Licencjonowane kasyno internetowe</p>
+              <div class="footer__summary-list">
+                <img src="images/18plus.svg" width="56" height="40" loading="lazy" alt="footer icon" />
+                <img src="images/gt.svg" width="56" height="40" loading="lazy" alt="footer icon" />
+                <img src="images/curacao.svg" width="56" height="40" loading="lazy" alt="footer icon" />
+              </div>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <p class="footer__menu-title">Linki</p>
+                  <a class="footer__menu-link" href="go">Gry</a>
+                  <a class="footer__menu-link" href="go">Promocje</a>
+                </li>
+                <li class="footer__menu-item">
+                  <p class="footer__menu-title">Dodatkowe info</p>
+                  <a class="footer__menu-link" href="go">Prywatność</a><a class="footer__menu-link" href="go">O nas</a>
+                </li>
+                <li class="footer__menu-item">
+                  <p class="footer__menu-title">Przydatne Linki</p>
+                  <a class="footer__menu-link" href="go">Program afiliacyjny</a>
+                  <a class="footer__menu-link" aria-label="hidden link" href="go"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__button">
+              <a class="footer__button-link" href="go">
+                <img src="images/support.webp" loading="lazy" width="20" height="21" alt="icon support" />
+                Wsparcie
+              </a>
+            </div>
+          </div>
+          <h3 class="footer__title">Karty bankowe</h3>
+          <div class="footer--scroll">
+            <div class="footer__payments">
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-qiwi"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-card"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-jeton_wallet"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-ecopayz"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-skrill"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-neteller"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-community_bank"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-cep_bank"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-papara"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-easyeft"></span>
+              </a>
+              <a class="footer__payments-link" aria-label="bank card" href="go">
+                <span class="sprite sprite-astropay-footer"></span>
+              </a>
+            </div>
+          </div>
+          <h3 class="footer__title">Studia Deweloperskie</h3>
+          <div class="footer--scroll">
+            <div class="footer__wrapp">
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-playgo"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-netent"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/booongo.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-novomatik"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-betsoft"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-playtech"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-quick"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-megajeck"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/gamzix.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/endorphina.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-bet2tech"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-betsolution"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-weare"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-noclues"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-virtual"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-mrslotty"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/mancala.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-zillion"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-platinus"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/gamebet.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/mojos.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-interactive"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-spribe"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/atronic.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-cyber-slot"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/playbro.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-champion"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/vtv.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-yggdrasil"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-tpg"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/fazi.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/vibra.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-triple"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/abc495005610.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/men-gaming.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-leader"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-ruby-play"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-hollywood"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-original"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-matrix"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-simpleplay"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-kagaming"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/pg-pocet.webp" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-swint"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-macaw"></use>
+                </svg>
+              </a>
+              <a class="footer__provider" aria-label="provider link" href="go">
+                <img src="images/onlyplay.svg" loading="lazy" width="120" height="60" alt="provider image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__text">
+          Slottica Casino PL jest licencjonowanym kasynem online działającym na podstawie licencji głównej o numerze CIL 5536/JAZ
+          wydanej w Curaçao. Witryna Slottica Casino jest własnością i jest obsługiwana przez Atlantic Management B.V.,
+          zarejestrowaną pod numerem 139089 i regulowaną na Curaçao, z siedzibą przy Emancipatie Boulevard Dominico F. "Don"
+          Martina 29, 4797, Willemstad, Curaçao. Europejskim przedstawicielem Atlantic Management B.V. jest A.T. Atlantic LTD (HE
+          412985), zarejestrowana pod adresem Katalanou, 1, Flat/Office 101, Aglantzia, 2121, Nikozja, Cypr. A.T. Atlantic LTD
+          działa na podstawie umowy o świadczenie usług z dnia 5 kwietnia 2022 r.
+        </div>
+      </div>
+      <div class="footer__copyright">© (2024) slottica.pl - Wszelkie prawa zastrzeżone</div>
+    </footer>
+  </body>
+</html>
